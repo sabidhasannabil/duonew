@@ -1,0 +1,28 @@
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    z-index: 99;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: .2rem;
+}
+
+.menu-btn {
+    border: 0;
+    color: #ffffff;
+    background: transparent;
+    font-size: 22px;
+}

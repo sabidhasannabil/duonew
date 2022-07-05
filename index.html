@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--main css link-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/rotatemenu.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/bodycontent.css">
+
+    <title>DuoNeos</title>
+</head>
+<body>
+    <!--Menu Section Start-->
+    <section id="menuSection">
+        <div class="hidden-bg">
+            <div class="menu-content">
+                <div class="">
+                    <img class="profile-img" alt="profile image" src="./assets/icon/sabid-avatar-1.svg">
+                    <h3 class="mt-8">Sabid Hasan</h3>
+                </div>
+                <div class="menu-items">
+                    <a href="#" class="mt-24"><i class="fa-solid fa-user mr-8"></i> LogIn / SignUp</a>
+                    <a href="#" class="mt-24"><i class="fa-solid fa-bell mr-8"></i> Notification</a>
+                    <a href="#" class="mt-24"><i class="fa-solid fa-heart mr-8"></i> Watch List</a>
+                    <a href="#" class="mt-24"><i class="fa-solid fa-person-through-window mr-8"></i> Sign Out</a>
+                </div>
+                    <hr class="mt-48">
+                <div class="menu-items mt-24">
+                    <a href="#" class="mt-24"><i class="fa-solid fa-gears mr-8"></i> Settings</a>
+                    <a href="#" class="mt-24"><i class="fa-solid fa-share-from-square mr-8"></i> Share</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu Section End-->
+
+    <!--Main Body Content Start-->
+    <section id="bodyContent">
+        <div class="main-container">
+            <!--header start-->
+            <div class="header">
+                <a href="#" class="logo">NEOS</a>
+                <button class="menu-btn"><i class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+            <!--header end-->
+
+            <!--hero section start-->
+            <div class="hero">
+                <!--hero slider content start-->
+                <div id='player'>
+                    <div>
+                        <video class="hero-video-slide active" id="heroTrailerOne" autoplay loop muted>
+                            <source src='./assets/videos/thor-love-and-thunder-trailer.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div>
+                        <video class="hero-video-slide" id="heroTrailerTwo" autoplay loop muted>
+                            <source src='./assets/videos/mulan.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div>
+                        <video class="hero-video-slide" id="heroTrailerThree" autoplay loop muted>
+                            <source src='./assets/videos/doctor-strangelove-in-the-multiverse-of-madness-trailer.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div>
+                        <video class="hero-video-slide" id="heroTrailerFour" autoplay loop muted>
+                            <source src='./assets/videos/mulan.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div>
+                        <video class="hero-video-slide" id="heroTrailerFive" autoplay loop muted>
+                            <source src='./assets/videos/mulan.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div>
+                        <video class="hero-video-slide" id="heroTrailerSix" autoplay loop muted>
+                            <source src='./assets/videos/mulan.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div>
+                        <video class="hero-video-slide" id="heroTrailerSeven" autoplay loop muted>
+                            <source src='./assets/videos/mulan_trailer.mp4' type='video/mp4' >
+                        </video>
+                    </div>
+                    <div id='controls'>
+                        <button id="btnMute" class="mute" title="mute" onclick='toggleMute();'><i class="fa-solid fa-volume-xmark"></i></button>
+                    </div>
+                </div>
+                
+                <div class="content active">
+                    <img id="heroMovieOneLogo" class="hero-movie-logo" src="./assets/images/english/thor_love_and_thunder_logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroOneDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroOneScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroOneStoryBy">Jac Schaeffer</a>, <a href="#" id="storyBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroOneMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content mb-12">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroOneImdbRating">6.7</span> <span id="heroOneImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroOneRottentomatoesRating">79%</span> <span id="heroOneRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroOneWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroOneAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <img id="heroMovieTwoLogo" class="hero-movie-logo" src="./assets/images/english/mulan_logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroTwoDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroTwoScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroTwoStoryBy">Jac Schaeffer</a>, <a href="#" id="storyBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroTwoMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content display-flex mb-16">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroTwoImdbRating">6.7</span> <span id="heroTwoImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroTwoRottentomatoesRating">79%</span> <span id="heroTwoRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroTwoWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroTwoAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <img id="heroMovieThreeLogo" class="hero-movie-logo" src="./assets/images/english/doctor_strange_multiverse-logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroThreeDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroThreeScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroThreeStoryBy">Jac Schaeffer</a>, <a href="#" id="heroThreeStoryBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroThreeMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content display-flex mb-16">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroThreeImdbRating">6.7</span> <span id="heroThreeImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroThreeRottentomatoesRating">79%</span> <span id="heroThreeRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroThreeWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroThreeAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <img id="heroMovieFourLogo" class="hero-movie-logo" src="./assets/images/english/mulan_logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroFourDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroFourScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroFourStoryBy">Jac Schaeffer</a>, <a href="#" id="heroFourStoryBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroFourMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content display-flex mb-16">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroFourImdbRating">6.7</span> <span id="heroFourImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroFourRottentomatoesRating">79%</span> <span id="heroFourRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroFourWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroFourAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <img id="heroMovieFiveLogo" class="hero-movie-logo" src="./assets/images/english/mulan_logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroFiveDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroFiveScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroFiveStoryBy">Jac Schaeffer</a>, <a href="#" id="heroFiveStoryBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroFiveMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content display-flex mb-16">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroFiveImdbRating">6.7</span> <span id="heroFiveImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroFiveRottentomatoesRating">79%</span> <span id="heroFiveRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroFiveWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroFiveAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <img id="heroMovieSixLogo" class="hero-movie-logo" src="./assets/images/english/mulan_logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroSixDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroSixScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroSixStoryBy">Jac Schaeffer</a>, <a href="#" id="heroSixStoryBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroSixMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content display-flex mb-16">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroSixImdbRating">6.7</span> <span id="heroSixImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroSixRottentomatoesRating">79%</span> <span id="heroSixRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroSixWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroSixAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <img id="heroMovieSevenLogo" class="hero-movie-logo" src="./assets/images/english/mulan_logo.png">
+                    <div class="director-content">
+                        <p class="m-0 mb-4">Director: <span><a href="#" id="heroSevenDirectorName">Cate Shortland</a></span></p>
+                        <p class="m-0">Writers: <span><a href="#" id="heroSevenScreenPlayBy">Eric Pearson</a> (screenplay by) <a href="#" id="heroSevenStoryBy">Jac Schaeffer</a>, <a href="#" id="heroSevenStoryBy">Ned Benson</a> (story by)</span></p>
+                    </div>
+                    <p id="heroSevenMovieDescription" class="mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="rating-content display-flex mb-16">
+                        <!--IMDb-->
+                        <div class="rating display-flex align-items-center mr-16">
+                            <h4 class="mr-6 m-0">IMDb</h4>
+                            <i class="fa-solid fa-star yellow mr-4"></i>
+                            <p class="m-0"><span id="heroSevenImdbRating">6.7</span> <span id="heroSevenImdbTotalUserReviewAmount">(356K)</span></p>
+                        </div>
+                        <!--Rotten Tomatoes-->
+                        <div class="rating display-flex align-items-center">
+                            <h4 class="mr-6 m-0">rottentomatoes</h4>
+                            <i class="fa-solid fa-bomb red mr-4"></i>
+                            <p class="m-0"><span id="heroSevenRottentomatoesRating">79%</span> <span id="heroSevenRottentomatoesTotalUserReviewAmount">(447)</span></p>
+                        </div>
+                    </div>
+                    <div class="display-flex">
+                        <a href="#" id="heroSevenWatchNowBtn" class="primary-btn mr-12"><i class="fa-solid fa-play"></i> Watch Now</a>
+                        <button id="heroSevenAddWatchList" class="primary-btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    </div>
+                </div>
+                <!--hero slider content end-->
+
+                <!--hero slider start-->
+                <div class="hero-slider-navigation">
+                    <div class="swiper swiper-hero-container hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide hero-slider-btn active">
+                                <img class="hero-slider-thumb" src="./assets/images/english/thor_love_and_thunder.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>1</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero-slider-btn">
+                                <img class="hero-slider-thumb" src="./assets/images/english/mulan.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>2</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero-slider-btn">
+                                <img class="hero-slider-thumb" src="./assets/images/english/doctor_strange_multiverse.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>3</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero-slider-btn">
+                                <img class="hero-slider-thumb" src="./assets/images/english/mulan.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>4</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero-slider-btn">
+                                <img class="hero-slider-thumb" src="./assets/images/english/mulan.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>5</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero-slider-btn">
+                                <img class="hero-slider-thumb" src="./assets/images/english/mulan.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>6</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero-slider-btn">
+                                <img class="hero-slider-thumb" src="./assets/images/english/mulan.jpeg">
+                                <div class="tag-box">
+                                    <p class="m-0">TOP<br><span>7</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--hero slider end-->
+            </div>
+            <!--hero section end-->
+
+
+
+            <div id="categories" class="mt-20">
+                <div class="section-heading">
+                    <a href="#" class="fs-24 mr-8">Categories</a>
+                    <i class="fa-solid fa-angle-right fs-24 red"></i>
+                </div>
+                <div class="swiper swiper-container categoriesSwiper mt-12">
+                    <div class="swiper-wrapper">
+                        <a href="#" id="recentlyWatched" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Recently Watched</span>
+                            </div>
+                        </a>
+                        <a href="#" id="englishMovies" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>English Movies</span>
+                            </div>
+                        </a>
+                        <a href="#" id="hindiMovies" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Hindi Movies</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                        <a href="#" id="" class="swiper-slide categorie-card">
+                            <div class="categorie-name-box">
+                                <span>Loading...</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+            </div>
+
+
+
+            <div id="englishMovies" class="mt-80">
+                <div class="section-heading">
+                    <a href="#" class="fs-24 mr-8">English Movies</a>
+                    <i class="fa-solid fa-angle-right fs-24 red"></i>
+                </div>
+                <div class="swiper swiper-container movieSwiper mt-12">
+                    <div class="swiper-wrapper">
+                        <a href="#" id="emOne" class="swiper-slide">
+                            <img id="emOnePoster" src="./assets/images/english/thor_love_and_thunder.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emOnePosterLogo" src="./assets/images/english/thor_love_and_thunder_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emTwo" class="swiper-slide">
+                            <img id="emTwoPoster" src="./assets/images/english/mulan.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emTwoPosterLogo" src="./assets/images/english/mulan_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emThree" class="swiper-slide">
+                            <img id="emThreePoster" src="./assets/images/english/doctor_strange_multiverse.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emThreePosterLogo" src="./assets/images/english/doctor_strange_multiverse-logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emFour" class="swiper-slide">
+                            <img id="emFourPoster" src="./assets/images/english/the_boys.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emFourPosterLogo" src="./assets/images/english/the_boys_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emFive" class="swiper-slide">
+                            <img id="emFivePoster" src="./assets/images/english/code_name_banshee.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emFivePosterLogo" src="./assets/images/english/code_name_banshee_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emSix" class="swiper-slide">
+                            <img id="emSixPoster" src="./assets/images/english/hot_seat.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emSixPosterLogo" src="./assets/images/english/hot_seat_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emSeven" class="swiper-slide">
+                            <img id="emSevenPoster" src="./assets/images/english/maverick.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emSevenPosterLogo" src="./assets/images/english/maverick_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emEight" class="swiper-slide">
+                            <img id="emEightPoster" src="./assets/images/english/the_secrets.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emEightPosterLogo" src="./assets/images/english/the_secrets_of_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emNine" class="swiper-slide">
+                            <img id="emNinePoster" src="./assets/images/english/the_man_form_toronto.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emNinePosterLogo" src="./assets/images/english/the_man_form_toronto_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="emTen" class="swiper-slide">
+                            <img id="emTenPoster" src="./assets/images/english/obi_wan_kenobi.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="emTenPosterLogo" src="./assets/images/english/obi_wan_kenobi_logo.png">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+
+
+            <div id="hindiMovies" class="mt-80 mb-80">
+                <div class="section-heading">
+                    <a href="#" class="fs-24 mr-8">Hindi Movies</a>
+                    <i class="fa-solid fa-angle-right fs-24 red"></i>
+                </div>
+                <div class="swiper swiper-container movieSwiper mt-12">
+                    <div class="swiper-wrapper">
+                        <a href="#" id="hmOne" class="swiper-slide">
+                            <img id="hmOnePoster" src="./assets/images/bollywood/mission_mangal.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmOnePosterLogo" src="./assets/images/bollywood/mission_mangal_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmTwo" class="swiper-slide">
+                            <img id="hmTwoPoster" src="./assets/images/bollywood/major.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmTwoPosterLogo" src="./assets/images/bollywood/major_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmThree" class="swiper-slide">
+                            <img id="hmThreePoster" src="./assets/images/bollywood/forensic.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmThreePosterLogo" src="./assets/images/bollywood/forensic_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmFour" class="swiper-slide">
+                            <img id="hmFourPoster" src="./assets/images/bollywood/anek.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmFourPosterLogo" src="./assets/images/bollywood/anek_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmFive" class="swiper-slide">
+                            <img id="hmFivePoster" src="./assets/images/bollywood/attack.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmFivePosterLogo" src="./assets/images/bollywood/attack_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmSix" class="swiper-slide">
+                            <img id="hmSixPoster" src="./assets/images/bollywood/heropanti.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmSixPosterLogo" src="./assets/images/bollywood/heropanti_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmSeven" class="swiper-slide">
+                            <img id="hmSevenPoster" src="./assets/images/english/maverick.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmSevenPosterLogo" src="./assets/images/english/maverick_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmEight" class="swiper-slide">
+                            <img id="hmEightPoster" src="./assets/images/english/the_secrets.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmEightPosterLogo" src="./assets/images/english/the_secrets_of_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmNine" class="swiper-slide">
+                            <img id="hmNinePoster" src="./assets/images/english/the_man_form_toronto.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmNinePosterLogo" src="./assets/images/english/the_man_form_toronto_logo.png">
+                            </div>
+                        </a>
+                        <a href="#" id="hmTen" class="swiper-slide">
+                            <img id="hmTenPoster" src="./assets/images/english/obi_wan_kenobi.jpeg">
+                            <div class="movie-logo-box">
+                                <img id="hmTenPosterLogo" src="./assets/images/english/obi_wan_kenobi_logo.png">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+              
+
+
+
+            <!--body content start-->
+            <div class="">
+                
+            </div>
+            <!--body content end-->
+        </div>
+    </section>
+    <!--Main Body Content End-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/rotatemenu.js"></script>
+    
+    <script src="./js/video_control.js"></script>
+    
+    
+</body>
+</html>

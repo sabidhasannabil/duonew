@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #d9171a;
+    --bg-primary: #242424;
+    --yellow-color: #e69d00;
+    --white-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oxanium', cursive;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*Primary Button css*/
+.primary-btn {
+    color: #ffffff;
+    padding: .8rem 1.2rem;
+    border: 0;
+    border-radius: .6rem;
+    /* line-height: 3; */
+    background: #D9171A;
+    transition-duration: .4s;
+}
+
+.primary-btn:hover {
+    letter-spacing: .05rem;
+    box-shadow: 0 6px 14px #D9171A;
+    transition-duration: .4s;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.yellow {
+  color: var(--yellow-color);
+}
+
+.red {
+  color: var(--primary-color);
+}
