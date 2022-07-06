@@ -1,0 +1,407 @@
+.categorie-card {
+    border-radius: .6rem !important;
+    aspect-ratio: 21 / 8 !important;
+}
+
+.categories-link-bg {
+    width: 100%;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+}
+
+/* .gallery-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 23, 23, 0.61);
+    z-index: 99;
+    border-radius: .6rem;
+} */
+
+.movie-logo {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .6rem;
+    background: #1a1a1a94;
+    z-index: 99;
+    transition: .4s ease;
+}
+
+.movie-logo:hover {
+    background: #5c5c5c36;
+}
+
+.movie-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+}
+
+.movie-logo img:hover {
+    fill: #d9171a;
+}
+
+.movie-logo span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.gallery-wrap .item {
+    flex: 1;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: all 0.8s ease;
+    position: relative;
+}
+
+.gallery-wrap .item:hover {
+    flex: 3;
+}
+
+
+/*live tv start*/
+
+.wrap-effect-livetv .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/livetv/channel.png');
+}
+
+.wrap-effect-livetv .item:nth-of-type(2) {
+    background-image: url('/images/livetv/channel1.png');
+}
+
+.wrap-effect-livetv .item:nth-of-type(3) {
+    background-image: url('/images/livetv/channel2.png');
+}
+
+.wrap-effect-livetv .item:nth-of-type(4) {
+    background-image: url('/images/livetv/channel3.png');
+}
+
+.wrap-effect-livetv .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/livetv/channel4.png');
+}
+
+
+/*live tv end*/
+
+
+/*Indian Bangla movies start*/
+
+.wrap-effect-banglamovies .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/asur.png');
+}
+
+.wrap-effect-banglamovies .item:nth-of-type(2) {
+    background-image: url('/images/gumnammi.png');
+}
+
+.wrap-effect-banglamovies .item:nth-of-type(3) {
+    background-image: url('/images/love-aj-kal-bangla.png');
+}
+
+.wrap-effect-banglamovies .item:nth-of-type(4) {
+    background-image: url('/images/amazon.png');
+}
+
+.wrap-effect-banglamovies .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/jonaki.png');
+}
+
+
+/*Indian Bangla movies end*/
+
+
+/*Asian & anime shows start*/
+
+.wrap-effect-animeshows .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/anime1.jpg');
+}
+
+.wrap-effect-animeshows .item:nth-of-type(2) {
+    background-image: url('/images/anime3.jpg');
+}
+
+.wrap-effect-animeshows .item:nth-of-type(3) {
+    background-image: url('/images/anime4.jpg');
+}
+
+.wrap-effect-animeshows .item:nth-of-type(4) {
+    background-image: url('/images/anime.jpg');
+}
+
+.wrap-effect-animeshows .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/anime2.jpg');
+}
+
+
+/*Asian & anime shows end*/
+
+
+/*Asian & anime movies start*/
+
+.wrap-effect-animemovies .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/anime.jpg');
+}
+
+.wrap-effect-animemovies .item:nth-of-type(2) {
+    background-image: url('/images/anime1.jpg');
+}
+
+.wrap-effect-animemovies .item:nth-of-type(3) {
+    background-image: url('/images/anime2.jpg');
+}
+
+.wrap-effect-animemovies .item:nth-of-type(4) {
+    background-image: url('/images/anime3.jpg');
+}
+
+.wrap-effect-animemovies .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/anime4.jpg');
+}
+
+
+/*Asian & anime movies end*/
+
+
+/*Indian web series start*/
+
+.wrap-effect-indwebseries .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/indweb.jpg');
+}
+
+.wrap-effect-indwebseries .item:nth-of-type(2) {
+    background-image: url('/images/indweb1.jpg');
+}
+
+.wrap-effect-indwebseries .item:nth-of-type(3) {
+    background-image: url('/images/indweb2.jpg');
+}
+
+.wrap-effect-indwebseries .item:nth-of-type(4) {
+    background-image: url('/images/indweb3.jpg');
+}
+
+.wrap-effect-indwebseries .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/indweb4.jpg');
+}
+
+
+/*Indian web series end*/
+
+
+/*Hindi movies start*/
+
+.wrap-effect-hindimovies .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/bell-bottom.jpg');
+}
+
+.wrap-effect-hindimovies .item:nth-of-type(2) {
+    background-image: url('/images/jawaani-jaaneman.png');
+}
+
+.wrap-effect-hindimovies .item:nth-of-type(3) {
+    background-image: url('/images/love-aj-kal.png');
+}
+
+.wrap-effect-hindimovies .item:nth-of-type(4) {
+    background-image: url('/images/panga.png');
+}
+
+.wrap-effect-hindimovies .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/drama4.jpg');
+}
+
+
+/*Hindi movies end*/
+
+
+/*English movies start*/
+
+.wrap-effect-englishmovies .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/black-widow.png');
+}
+
+.wrap-effect-englishmovies .item:nth-of-type(2) {
+    background-image: url('/images/sonic.png');
+}
+
+.wrap-effect-englishmovies .item:nth-of-type(3) {
+    background-image: url('/images/star-war-m.png');
+}
+
+.wrap-effect-englishmovies .item:nth-of-type(4) {
+    background-image: url('/images/gurdians-of-the-galazxy.png');
+}
+
+.wrap-effect-englishmovies .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/mulan.jpg');
+}
+
+
+/*English movies end*/
+
+
+/*Tv show start*/
+
+.wrap-effect-tvshow .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/tvshow.png');
+}
+
+.wrap-effect-tvshow .item:nth-of-type(2) {
+    background-image: url('/images/tvshow1.jpg');
+}
+
+.wrap-effect-tvshow .item:nth-of-type(3) {
+    background-image: url('/images/tvshow2.jpg');
+}
+
+.wrap-effect-tvshow .item:nth-of-type(4) {
+    background-image: url('/images/tvshow3.jpg');
+}
+
+.wrap-effect-tvshow .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/tvshow4.jpg');
+}
+
+
+/*Tv show end*/
+
+
+/*collection start*/
+
+.wrap-effect-collection .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/james-bond.png');
+}
+
+.wrap-effect-collection .item:nth-of-type(2) {
+    background-image: url('/images/bat-man.png');
+}
+
+.wrap-effect-collection .item:nth-of-type(3) {
+    background-image: url('/images/end-game.png');
+}
+
+.wrap-effect-collection .item:nth-of-type(4) {
+    background-image: url('/images/gurdians-of-the-galazxy.png');
+}
+
+.wrap-effect-collection .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/star-war-m.png');
+}
+
+
+/*collection end*/
+
+
+/*Watch list start*/
+
+.wrap-effect-watchlist .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('/images/black-widow.png');
+}
+
+.wrap-effect-watchlist .item:nth-of-type(2) {
+    background-image: url('/images/sonic.png');
+}
+
+.wrap-effect-watchlist .item:nth-of-type(3) {
+    background-image: url('/images/star-war-m.png');
+}
+
+.wrap-effect-watchlist .item:nth-of-type(4) {
+    background-image: url('/images/gurdians-of-the-galazxy.png');
+}
+
+.wrap-effect-watchlist .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('/images/joker.png');
+}
+
+
+/*Watch list end*/
+
+
+/*Recently watched start*/
+
+.wrap-effect-recentlywatched .item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-image: url('../assets/images/english/thor_love_and_thunder.jpeg');
+}
+
+.wrap-effect-recentlywatched .item:nth-of-type(2) {
+    background-image: url('../assets/images/english/the_secrets.jpeg');
+}
+
+.wrap-effect-recentlywatched .item:nth-of-type(3) {
+    background-image: url('../assets/images/english/the_man_form_toronto.jpeg');
+}
+
+.wrap-effect-recentlywatched .item:nth-of-type(4) {
+    background-image: url('../assets/images/bollywood/attack.jpeg');
+}
+
+.wrap-effect-recentlywatched .item:last-of-type {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-image: url('../assets/images/bollywood/anek.jpeg');
+}
+
+
+/*Recently watched end*/
